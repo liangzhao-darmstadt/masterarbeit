@@ -1,0 +1,11 @@
+export CUDA_VISIBLE_DEVICES=1
+nvidia-smi -l 1
+htop
+pkill -9 python
+tmux
+du -sh PycharmProjects/TadGAN_saved_models/critic_z
+
+anaconda environment
+conda create --name tf-gpu001 --clone base
+
+tf-gpu001: conda install -c anaconda tensorflow-gpu
